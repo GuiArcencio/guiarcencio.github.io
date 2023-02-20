@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "Open Sans";
+    src: url("OpenSans-VariableFont_wdth,wght.ttf");
+}
+
 html {
     box-sizing: border-box;
 }
@@ -5,4 +10,5 @@ html {
 *, *::before, *::after {
     margin: 0;
     box-sizing: inherit;
+    font-family: "Open Sans", sans-serif;
 }

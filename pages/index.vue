@@ -1,10 +1,9 @@
 <script setup lang="ts">
-const teste = ref(3)
 </script>
 
 <template>
     <div>
-        {{ teste }}
+        é o guizis
     </div>
 </template>
   
