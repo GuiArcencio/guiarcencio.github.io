@@ -4,5 +4,6 @@ export default defineNuxtConfig({
         head: {
             title: "Guilherme Arcencio"
         }
-    }
+    },
+    css: ["~/assets/global.scss"]
 })
