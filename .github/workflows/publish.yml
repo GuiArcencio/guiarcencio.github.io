@@ -1,0 +1,27 @@
+name: Publish to GitHub Pages
+
+on:
+  push:
+    branches: ["main"]
+
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18.7
+      - run: npm ci
+      - run: npm run generate
+      - uses: tagus/git-deploy@v0.4.1
+        with:
+          changes: .output/public
+          repository: git@github.com:GuiArcencio/landing-page.git
+          ssh_key: ${{ secrets.REPO_DEPLOY_KEY }}
+          branch: main
+          name: Guilherme Arcencio
+          email: guiarcencio@hotmail.com
+          clean_repo: true
