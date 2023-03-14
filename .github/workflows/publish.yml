@@ -4,8 +4,6 @@ on:
   push:
     branches: ["main"]
 
-  workflow_dispatch:
-
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -19,7 +17,7 @@ jobs:
       - uses: tagus/git-deploy@v0.4.1
         with:
           changes: .output/public
-          repository: git@github.com:GuiArcencio/landing-page.git
+          repository: git@github.com:GuiArcencio/guiarcencio.github.io.git
           ssh_key: ${{ secrets.REPO_DEPLOY_KEY }}
           branch: main
           name: Guilherme Arcencio
