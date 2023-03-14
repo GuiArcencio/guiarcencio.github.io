@@ -8,14 +8,19 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Setup NodeJS
+        uses: actions/setup-node@v3
         with:
           node-version: 18.7
-      - run: npm ci
-      - run: npm run generate
-      - run: touch .output/public/.nojekyll
-      - uses: tagus/git-deploy@v0.4.1
+      - name: Generate static files
+        run: |
+          npm ci
+          npm run generate
+          touch .output/public/.nojekyll
+      - name: Deploy to Pages repository
+        uses: tagus/git-deploy@v0.4.1
         with:
           changes: .output/public
           repository: git@github.com:GuiArcencio/guiarcencio.github.io.git
