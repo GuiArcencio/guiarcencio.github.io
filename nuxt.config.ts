@@ -5,5 +5,8 @@ export default defineNuxtConfig({
             title: "Guilherme Arcencio"
         }
     },
-    css: ["~/assets/global.scss"]
+    css: ["~/assets/global.scss"],
+    modules: [
+        "@nuxt/image-edge"
+    ]
 })
