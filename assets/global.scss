@@ -3,6 +3,11 @@
     src: url("OpenSans-VariableFont_wdth,wght.ttf");
 }
 
+@font-face {
+    font-family: "Source Code Pro";
+    src: url("SourceCodePro-VariableFont_wght.ttf");
+}
+
 html {
     box-sizing: border-box;
 }
@@ -11,4 +16,9 @@ html {
     margin: 0;
     box-sizing: inherit;
     font-family: "Open Sans", sans-serif;
+    color: #dbdbdb;
+}
+
+body {
+    background-color: #252525;
 }
