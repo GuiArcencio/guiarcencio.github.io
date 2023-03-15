@@ -29,6 +29,7 @@ main {
     align-items: center;
     justify-content: center;
     gap: 2vw;
+    align-self: center;
     margin-top: auto;
     margin-bottom: auto;
 
