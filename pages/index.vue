@@ -17,8 +17,9 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
     gap: 2vw;
+    margin-top: auto;
+    margin-bottom: auto;
 
     #main-text {
         p {
