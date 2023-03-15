@@ -7,6 +7,7 @@ export default defineNuxtConfig({
     },
     css: ["~/assets/global.scss"],
     modules: [
-        "@nuxt/image-edge"
+        "@nuxt/image-edge",
+        "nuxt-icon",
     ]
 })
