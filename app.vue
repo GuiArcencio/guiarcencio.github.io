@@ -1,5 +1,15 @@
+<script setup>
+const windowHeight = ref("")
+const allMounted = ref(false)
+onMounted(() => {
+    windowHeight.value = `${window.innerHeight}px`
+    allMounted.value = true
+})
+
+</script>
+
 <template>
-  <div id="wrapper">
+  <div v-if="allMounted" id="wrapper">
     <NuxtPage />
     <MainFooter />
   </div>
@@ -7,7 +17,7 @@
 
 <style lang="scss">
 #wrapper {
-    min-height: 100vh;
+    min-height: v-bind(windowHeight);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
