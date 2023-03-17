@@ -1,7 +1,7 @@
 <template>
   <div id="wrapper">
     <NuxtPage />
-    <Footer />
+    <MainFooter />
   </div>
 </template>
 
@@ -10,5 +10,6 @@
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 </style>

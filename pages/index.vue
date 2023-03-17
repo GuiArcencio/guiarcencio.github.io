@@ -47,7 +47,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 8px;
+    gap: 1vh;
 
     #socials {
         display: flex;
@@ -78,5 +78,19 @@ main {
     border-width: 3px;
     border-color: #151515;
     border-style: solid;
+}
+
+@media screen and (orientation: portrait) {
+    main {
+        flex-direction: column;
+        gap: 3vh;
+        margin-top: 8vh;
+        margin-bottom: 0;
+
+        #main-text {
+            margin-left: 5vw;
+            margin-right: 5vw;
+        }
+    }
 }
 </style>
