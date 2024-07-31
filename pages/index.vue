@@ -18,7 +18,7 @@
       </div>
     </div>
     <div id="main-text">
-      <p>This page is still under construction. Feel free to check out my social network pages in the meantime :)</p>
+      <p>Computer Engineering undergrad and Machine Learning researcher.</p>
     </div>
   </main>
 </template>
