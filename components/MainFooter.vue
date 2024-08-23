@@ -1,6 +1,6 @@
 <template>
   <footer>
-    <p>This website was made with Nuxt. The source code is available <a href="https://github.com/GuiArcencio/guiarcencio.github.io" target="_blank" rel="noreferrer noopener">here</a>.</p>
+    <p>This website was made with Nuxt. Source code is available <a href="https://github.com/GuiArcencio/guiarcencio.github.io" target="_blank" rel="noreferrer noopener">here</a>.</p>
   </footer>
 </template>
 
