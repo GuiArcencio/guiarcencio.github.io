@@ -1,11 +1,11 @@
 <script setup>
 definePageMeta({
     middleware: function () {
-        return navigateTo("/")
-    }
+        return navigateTo('/')
+    },
 })
 </script>
 
 <template>
-  <div />
+    <div />
 </template>

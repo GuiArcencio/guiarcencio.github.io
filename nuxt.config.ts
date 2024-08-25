@@ -5,10 +5,10 @@ export default defineNuxtConfig({
 
     app: {
         head: {
-            title: "Guilherme Arcencio"
-        }
+            title: 'Guilherme Arcencio',
+        },
     },
 
-    css: ["~/assets/global.scss"],
-    modules: ["@nuxt/image", "@nuxt/icon"]
+    css: ['~/assets/global.scss'],
+    modules: ['@nuxt/image', '@nuxt/icon'],
 })
